@@ -1,0 +1,12 @@
+DataDirectory /data/tor
+DataDirectoryGroupReadable 1
+User toranon
+ControlSocket /run/tor/control
+ControlSocketsGroupWritable 1
+CookieAuthentication 1
+CookieAuthFile /run/tor/control.authcookie
+CookieAuthFileGroupReadable 1
+
+HiddenServiceDir /data/tor/web_hidden_service/
+HiddenServicePort 80 127.0.0.1:8080
+
